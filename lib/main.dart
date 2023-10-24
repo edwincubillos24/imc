@@ -42,13 +42,13 @@ class _MyHomePageState extends State<MyHomePage> {
     setState(() {
       _imc = double.parse(_peso.text) / pow(double.parse(_altura.text), 2);
       if (_imc < 18.5) {
-        _mensaje = "Su IMC es $_imc y tiene Bajo Peso";
+        _mensaje = "Su IMC es $_imc y tiene bajo peso";
       } else {
         if (_imc >= 18.5 && _imc < 24.9) {
-          _mensaje = "Su IMC es $_imc y su peso es Normal";
+          _mensaje = "Su IMC es $_imc y su peso es normal";
         } else {
           if (_imc >= 25.0 && _imc < 29.9) {
-            _mensaje = "Su IMC es $_imc y tiene Sobrepeso";
+            _mensaje = "Su IMC es $_imc y tiene sobrepeso";
           } else {
             _mensaje = "Su IMC es $_imc y tiene obesidad";
           }
